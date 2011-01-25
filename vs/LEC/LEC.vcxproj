@@ -43,6 +43,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)/../../;$(IncludePath);$(SolutionDir)/../dummy/;$(SolutionDir)/../../ExecEngine/</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -82,6 +83,7 @@
     <ClInclude Include="..\..\execengine\kernelobjects\Character.h" />
     <ClInclude Include="..\..\execengine\kernelobjects\Class.h" />
     <ClInclude Include="..\..\execengine\kernelobjects\Decimal.h" />
+    <ClInclude Include="..\..\execengine\kernelobjects\DynamicObject.h" />
     <ClInclude Include="..\..\execengine\kernelobjects\Integer.h" />
     <ClInclude Include="..\..\execengine\kernelobjects\Object.h" />
     <ClInclude Include="..\..\execengine\kernelobjects\Routine.h" />
@@ -97,6 +99,7 @@
     <ClCompile Include="..\..\execengine\kernelobjects\Character.cpp" />
     <ClCompile Include="..\..\execengine\kernelobjects\Class.cpp" />
     <ClCompile Include="..\..\execengine\kernelobjects\Decimal.cpp" />
+    <ClCompile Include="..\..\execengine\kernelobjects\DynamicObject.cpp" />
     <ClCompile Include="..\..\execengine\kernelobjects\Integer.cpp" />
     <ClCompile Include="..\..\execengine\kernelobjects\Object.cpp" />
     <ClCompile Include="..\..\execengine\kernelobjects\Routine.cpp" />

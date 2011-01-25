@@ -9,7 +9,7 @@ Class Test
 		
 		
 		
-		@self = (@Test new);
+	@self = (@Test new);
 
         ((@self class) className) println;
 

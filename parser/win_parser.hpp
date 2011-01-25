@@ -41,19 +41,23 @@
    enum yytokentype {
      T_VARIDENTIFIER = 258,
      T_IDENTIFIER = 259,
-     T_STRING = 260,
-     T_CHARACTER = 261,
-     T_INTEGER = 262,
-     T_DECIMAL = 263,
-     T_CLASS = 264,
-     T_IMPORT = 265,
-     T_RETURN = 266,
-     T_INTERCALATE = 267,
-     T_SEMICOLON = 268,
-     T_OP_BRACE = 269,
-     T_CL_BRACE = 270,
-     T_OP_PARENT = 271,
-     T_CL_PARENT = 272
+     T_BINARY_OP_ADD = 260,
+     T_BINARY_OP_MUL = 261,
+     T_BINARY_OP_LOG = 262,
+     T_STRING = 263,
+     T_CHARACTER = 264,
+     T_INTEGER = 265,
+     T_DECIMAL = 266,
+     T_CLASS = 267,
+     T_IMPORT = 268,
+     T_RETURN = 269,
+     T_INTERCALATE = 270,
+     T_ASSIGNAMENT = 271,
+     T_SEMICOLON = 272,
+     T_OP_BRACE = 273,
+     T_CL_BRACE = 274,
+     T_OP_PARENT = 275,
+     T_CL_PARENT = 276
    };
 #endif
 
@@ -80,7 +84,7 @@ typedef union YYSTYPE
 
 
 /* Line 1676 of yacc.c  */
-#line 84 "win_parser.hpp"
+#line 88 "win_parser.hpp"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
